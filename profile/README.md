@@ -21,8 +21,6 @@ mindmap
       pipes · slits · annuli
     📐 rheomodel
       Flow-curve model collection
-    🔧 lmfit-py
-      Least-squares fitting engine
 ```
 
 ## The pieces
@@ -34,7 +32,6 @@ mindmap
 | [rheolite](https://github.com/rheopy/rheolite) | 💻 JupyterLite playground reproducing the rheofit walkthroughs entirely in the browser |
 | [rheoflow](https://github.com/rheopy/rheoflow) | 🌊 Engineering calculators for non-Newtonian flow in pipes, slits and annuli |
 | [rheomodel](https://github.com/rheopy/rheomodel) | 📐 Collection of rheology flow-curve models |
-| [lmfit-py](https://github.com/rheopy/lmfit-py) | 🔧 Fork of the lmfit least-squares minimization library |
 
 ## Philosophy
 
