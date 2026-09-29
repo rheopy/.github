@@ -6,7 +6,10 @@ libraries bundle agent skills, docs stay in sync with code.
 
 ```mermaid
 mindmap
-  root((⚗️ rheofit<br/>flow-curve fitting library))
+  root((rheopy<br/>open rheology, end to end))
+    ⚗️ rheofit
+      Flow-curve fitting library
+      models · guarded fitting · skill · browser app
     📊 rheodata
       Curated, quality-checked datasets
       training · simulation · benchmarking
