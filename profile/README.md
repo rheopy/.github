@@ -5,35 +5,29 @@ to in-browser exploration. Every tool ships with the knowledge to use it:
 libraries bundle agent skills, docs stay in sync with code.
 
 ```mermaid
-flowchart TD
-    subgraph data ["📥 Data"]
-        rheodata["📊 rheodata<br/><i>curated datasets for training,<br/>simulation & benchmarking</i>"]
-    end
-    subgraph fit ["⚗️ Fit"]
-        rheofit["rheofit<br/><i>flow-curve models · guarded fitting engine<br/>agent skill · browser fit app</i>"]
-    end
-    subgraph explore ["🔬 Explore"]
-        rheolite["💻 rheolite<br/><i>JupyterLite playground —<br/>run the walkthroughs in your browser</i>"]
-        rheoflow["🌊 rheoflow<br/><i>non-Newtonian flow calculators<br/>pipes, slits, annuli</i>"]
-    end
-    subgraph foundations ["🧱 Foundations"]
-        rheomodel["📐 rheomodel<br/><i>flow-curve model collection</i>"]
-        lmfit["🔧 lmfit-py<br/><i>least-squares fitting engine</i>"]
-    end
-
-    rheodata --> rheofit
-    rheofit --> rheolite
-    rheofit --> rheoflow
-    rheomodel -.-> rheofit
-    lmfit -.-> rheofit
+mindmap
+  root((⚗️ rheofit<br/>flow-curve fitting library))
+    📊 rheodata
+      Curated, quality-checked datasets
+      training · simulation · benchmarking
+    💻 rheolite
+      JupyterLite playground
+      rheofit walkthroughs in your browser
+    🌊 rheoflow
+      Non-Newtonian flow calculators
+      pipes · slits · annuli
+    📐 rheomodel
+      Flow-curve model collection
+    🔧 lmfit-py
+      Least-squares fitting engine
 ```
 
 ## The pieces
 
 | Repository | What it is |
 |---|---|
-| [rheodata](https://github.com/rheopy/rheodata) | 📊 Pip-installable library of quality-checked rheology datasets — literature & community, each with provenance, sample and measurement metadata |
 | [rheofit](https://github.com/rheopy/rheofit) | ⚗️ Flow-curve fitting library: nine models, guarded fitting engine, an agent skill that ships with the package, and a browser fit app |
+| [rheodata](https://github.com/rheopy/rheodata) | 📊 Pip-installable library of quality-checked rheology datasets — literature & community, each with provenance, sample and measurement metadata |
 | [rheolite](https://github.com/rheopy/rheolite) | 💻 JupyterLite playground reproducing the rheofit walkthroughs entirely in the browser |
 | [rheoflow](https://github.com/rheopy/rheoflow) | 🌊 Engineering calculators for non-Newtonian flow in pipes, slits and annuli |
 | [rheomodel](https://github.com/rheopy/rheomodel) | 📐 Collection of rheology flow-curve models |
